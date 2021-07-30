@@ -1,0 +1,53 @@
+item {
+  id: 1
+  name: 'cat'}
+item {
+  id: 2
+  name: 'dog'}
+item {
+  id: 3
+  name: 'train'}
+item {
+  id: 4
+  name: 'person'
+}
+item {
+  id: 5
+  name: 'sofa'
+}
+item {
+  id: 6
+  name: 'chair'
+}
+item {
+  id: 7
+  name: 'pottedplant'
+}
+item {
+  id: 8
+  name: 'diningtable'
+}
+item {
+  id: 9
+  name: 'horse'
+}
+item {
+  id: 1
+0  name: 'cow'
+}
+item {
+  id: 11
+  name: 'bus'
+}
+item {
+  id: 12
+  name: 'bicycle'
+}
+item {
+  id: 13
+  name: 'car'
+}
+item {
+  id: 13
+  name: 'motorbike'
+}
