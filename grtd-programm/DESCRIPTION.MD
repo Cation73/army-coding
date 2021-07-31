@@ -6,9 +6,9 @@
 
 Примеры использования программы представлены ниже:
 
-![Главное окно программы](https://github.com/Cation73/army-coding/blob/master/grtd-programm/present_programm.png)
+![Главное окно программы](https://github.com/Cation73/army-coding/blob/master/grtd-programm/input.png)
 
-![Вывод](https://github.com/Cation73/army-coding/blob/master/grtd-programm/present_programm_2.png)
+![Вывод](https://github.com/Cation73/army-coding/blob/master/grtd-programm/output.png)
 
 
 
