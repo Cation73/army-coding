@@ -219,14 +219,6 @@ class window(QtWidgets.QWidget):
         self.sigma_tnd.setValue(300)
         self.sigma_tnd.setSingleStep(10)
         
-        # создание окна помощи
-        self.bar = QtWidgets.QMenuBar(self)
-        self.file_menu = self.bar.addMenu('Помощь')
-        self.description = QtWidgets.QAction('Описание программы', self)
-        self.file_menu.addAction(self.description)
-        
-        
-        
         self.label = QtWidgets.QLabel()
         # кнопка закрытия
         self.btnQuit = QtWidgets.QPushButton('Закрыть окно')
@@ -315,8 +307,8 @@ class window(QtWidgets.QWidget):
         self.mygroupbox.setLayout(self.form)
         self.scroll = QtWidgets.QScrollArea()
         self.scroll.setWidget(self.mygroupbox)
-        self.scroll.setFixedHeight(600)
-        self.scroll.setFixedWidth(900)
+        self.scroll.setFixedHeight(700)
+        self.scroll.setFixedWidth(970)
         self.layout = QtWidgets.QVBoxLayout(self)
         self.layout.addWidget(self.scroll)
     
@@ -327,7 +319,7 @@ class window(QtWidgets.QWidget):
         #data = pd.read_csv(os.path.join(os.path.dirname(__file__), '../gui_version/standard_atmosphere.csv'))
         #data['high'] = data['high'].astype('float64')
         #data = pd.DataFrame(data)
-        conn = sqlite3.connect(os.path.realpath('../gui_version/standard_atmosphere.db'))
+        conn = sqlite3.connect(os.path.realpath('../grtd-programm/standard_atmosphere.db'))
         cursor = conn.cursor()
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
         data = pd.read_sql(sql = 'SELECT * FROM standard_atmosphere', con = conn)
@@ -721,7 +713,7 @@ class output_window(QtWidgets.QWidget):
         start_font_size = 14
         self.font.setPixelSize(start_font_size)
         self.k_font = start_font_size / 243
-        self.setFixedSize(600, 300)
+        self.setFixedSize(700, 300)
         self.show()
 
 
@@ -746,6 +738,6 @@ if __name__ == '__main__':
     app.setPalette(palette)
 
     main_window = window()
-    main_window.setFixedSize(950, 650)
+    main_window.setFixedSize(1000, 800)
     main_window.show()
     sys.exit(app.exec_())
