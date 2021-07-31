@@ -4,7 +4,7 @@
 
 *Библиотеки: pandas, numpy, math, sqlite, pyqt.*
 
-Примеры использования программы представлены ниже:
+Примеры использования программы представлены ниже.
 
 ![Главное окно программы](https://github.com/Cation73/army-coding/blob/master/grtd-programm/input.png)
 
